@@ -689,4 +689,22 @@ namespace CNTK
         // Version 9: Add OneHot node.
         static const size_t s_serializationVersion = 9;
     };
+
+    class UDFUtils
+    {
+    public:
+
+        static bool isUDF(const FunctionPtr& f);
+
+        static bool isUDF(const Dictionary& dict);
+
+        static Dictionary Serialize(const FunctionPtr& dictionary);
+
+        static FunctionPtr Deserialize(const Dictionary& dictionary,
+            const std::unordered_map<std::wstring, Variable>& uidToVariableMap,
+            const CNTK::DeviceDescriptor& device,
+            const UDFDeserializerPtr& deserializer);
+
+        static const size_t s_serializationVersion = 0;
+    };
 }
