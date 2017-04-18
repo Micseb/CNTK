@@ -200,6 +200,8 @@
     <ClCompile Include="BlockHandlerAVX.cpp" />
     <ClCompile Include="BlockHandlerSSE.cpp" />
     <ClCompile Include="ConvolutionEngine.cpp" />
+    <ClCompile Include="CPUMatrixD.cpp" />
+    <ClCompile Include="CPUMatrixF.cpp" />
     <ClCompile Include="CPURNGHandle.cpp" />
     <ClCompile Include="CPUSparseMatrix.cpp" />
     <ClCompile Include="CUDAPageLockedMemAllocator.cpp" />

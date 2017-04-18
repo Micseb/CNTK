@@ -49,6 +49,12 @@
       <Filter>CPU</Filter>
     </ClCompile>
     <ClCompile Include="DataTransferer.cpp" />
+    <ClCompile Include="CPUMatrixD.cpp">
+      <Filter>CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUMatrixF.cpp">
+      <Filter>CPU</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonMatrix.h" />
